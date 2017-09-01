@@ -1,0 +1,29 @@
+﻿intrinsic class com.GameInterface.Quest
+{
+	public var m_ID : Number;
+	public var m_MissionName : String;
+	public var m_MissionDesc : String;
+	public var m_Xp : Number;
+	public var m_Cash : Number;
+	public var m_MissionType : Number;
+	public var m_TierMax : Number;
+	public var m_HasCooldown : Boolean;
+	public var m_IsRepeatable : Boolean;
+	public var m_HasCompleted : Boolean;
+	public var m_IsLocked : Boolean;
+	public var m_HideIfLocked : Boolean;
+	public var m_CooldownExpireTime : Number;
+	public var m_Tiers : Array;
+	public var m_CurrentTask : com.GameInterface.QuestTask;
+	public var m_Rewards : Array;
+	public var m_OptionalRewards : Array;
+	public var m_MemberBonusRewards : Array;
+	public var m_SolvedText : String;
+	public var m_MissionIsDLC : Boolean;
+	public var m_DLCTag : Number;
+	public var m_NoPause : Boolean;
+	public var m_MissionIsNightmare : Boolean;
+	public var m_CanLocateOnMap : Boolean;
+	public var m_SortOrder : Number;
+
+}
