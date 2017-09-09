@@ -10,6 +10,7 @@ intrinsic class com.GameInterface.GroupFinder
 	static public var SignalClientStartedGroupFinderActivity : Signal;
 	static public var SignalGroupFinderMemberReady : Signal;
 	static public var SignalGroupFinderReadyFailed : Signal;
+	static public var SignalNeededRolesUpdated : Signal;
 
 	static public function SignUp(activitiesArray:Array, skipQueue:Boolean) : Void;
 
@@ -32,5 +33,7 @@ intrinsic class com.GameInterface.GroupFinder
 	static public function GetActiveQueue() : Number;
 
 	static public function GetActiveRole() : Number;
+
+	static public function RequestNeededRoles() : Void;
 
 }

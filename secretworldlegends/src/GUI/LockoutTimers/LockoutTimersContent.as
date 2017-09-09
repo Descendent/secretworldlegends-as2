@@ -1,26 +1,27 @@
 ﻿import com.Components.WindowComponentContent;
 import com.GameInterface.Game.Character;
-import com.GameInterface.SpellBase;
-import com.GameInterface.Quests;
 import com.GameInterface.Utils;
-import gfx.controls.ScrollingList;
-import gfx.controls.Button;
-import gfx.controls.ButtonGroup;
 import com.Utils.LDBFormat;
 import mx.utils.Delegate;
+import GUI.LockoutTimers.LockoutEntry;
 intrinsic class GUI.LockoutTimers.LockoutTimersContent extends WindowComponentContent
 {
-	private var m_Description : TextField;
-	private var m_ItemList : ScrollingList;
-	private var m_RaidTab : Button;
-	private var m_ScenarioTab : Button;
-	private var m_MissionTab : Button;
-	private var m_TabGroup : ButtonGroup;
-	static private var m_RaidList : Array;
-	static private var m_ScenarioList : Array;
-	static private var TYPE_BUFF : Object;
-	static private var TYPE_MISSION : Object;
-	static private var MAX_ROWS : Object;
+	private var m_DailyHeader : TextField;
+	private var m_KeysHeader : TextField;
+	private var m_RaidsHeader : TextField;
+	private var m_DailyLoginReset : LockoutEntry;
+	private var m_ChallengeReset : LockoutEntry;
+	private var m_KeyReset : LockoutEntry;
+	private var m_DungeonKeys : LockoutEntry;
+	private var m_ScenarioKeys : LockoutEntry;
+	private var m_LairKeys : LockoutEntry;
+	private var m_LFRRaid : LockoutEntry;
+	private var m_EliteRaid : LockoutEntry;
+	static private var RAID_LFG : Number;
+	static private var RAID_ELITE : Number;
+	private var DAILY_RESET_HOUR : Number;
+	private var DAILY_RESET_MINUTE : Number;
+	private var DAILY_RESET_SECOND : Number;
 
 	public function LockoutTimersContent();
 
@@ -28,12 +29,6 @@ intrinsic class GUI.LockoutTimers.LockoutTimersContent extends WindowComponentCo
 
 	private function SetLabels() : Void;
 
-	private function GetLockoutsFromBuffs(buffArray:Array, iconString:String) : Array;
-
-	private function TabChanged(button:Button) : Void;
-
-	private function RemoveFocus() : Void;
-
-	private function SetScrollBarVisibility() : Void;
+	private function SetupLockouts() : Void;
 
 }

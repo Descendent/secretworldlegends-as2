@@ -35,6 +35,8 @@ intrinsic class GUI.Mission.MissionTrackerItem extends UIComponent
 
 	public function SetData(quest:Quest);
 
+	private function SlotTierFailed(tierId:Number, showFeedback:Boolean);
+
 	public function SetGoalVisibility(visible:Boolean, snap:Boolean);
 
 	public function Draw();

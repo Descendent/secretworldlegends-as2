@@ -33,6 +33,7 @@ intrinsic class GUI.GroupFinder.PlayfieldEntry extends UIComponent
 	private var m_Depth : Number;
 	private var m_Random : Boolean;
 	private var m_BonusReward : String;
+	private var m_NeededRole : Number;
 	private var m_TooltipText : String;
 	private var m_Tooltip : TooltipInterface;
 	private var m_TooltipTimeout : Number;
@@ -53,6 +54,10 @@ intrinsic class GUI.GroupFinder.PlayfieldEntry extends UIComponent
 	private function configUI() : Void;
 
 	public function SetData(playfieldName:String, queueId:Number, playfieldDifficulty:Number, image:Number, subEntries:Array, depth:Number, isRandom:Boolean) : Void;
+
+	private function SlotNeededRolesUpdated(neededRoles:Array);
+
+	public function UpdateNeededRole(queueId:Number, neededRole:Number);
 
 	public function SetPrivateTeam(privateTeam:Boolean) : Void;
 
@@ -90,7 +95,7 @@ intrinsic class GUI.GroupFinder.PlayfieldEntry extends UIComponent
 
 	public function SetFocused(focus:Boolean) : Void;
 
-	private function SlotSubEntryFocused(id:Number, image:Number, isRandom:Boolean) : Void;
+	private function SlotSubEntryFocused(id:Number, image:Number, isRandom:Boolean, neededRole:Number) : Void;
 
 	public function Expand() : Void;
 

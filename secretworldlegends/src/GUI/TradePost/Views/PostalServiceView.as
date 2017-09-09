@@ -34,6 +34,7 @@ intrinsic class GUI.TradePost.Views.PostalServiceView extends UIComponent
 	static private var COMPOSE_LETTER : String;
 	static private var COMPOSE_LETTER_LOCKED : String;
 	static private var DELETE_MAIL : String;
+	static private var DELETE_ALL_MAIL : String;
 	static private var TAKE_ALL_ATTACHMENTS : String;
 	static private var REPLY : String;
 	static private var TO : String;
@@ -49,6 +50,7 @@ intrinsic class GUI.TradePost.Views.PostalServiceView extends UIComponent
 	private var m_ScrollBarPosition : Number;
 	private var m_ReadMailHeader : MovieClip;
 	private var m_DeleteMailButton : MovieClip;
+	private var m_DeleteAllMailButton : MovieClip;
 	private var m_TakeAllAttachmentsButton : MovieClip;
 	private var m_ReadMailBody : MovieClip;
 	private var m_MailList : MultiColumnListView;
@@ -74,7 +76,11 @@ intrinsic class GUI.TradePost.Views.PostalServiceView extends UIComponent
 
 	private function ButtonClickHandler(event:Object) : Void;
 
-	private function SlotConfirmDeleteMailPromptResponse() : Void;
+	private function TakeAllAttachments() : Void;
+
+	private function DeleteAllMail() : Void;
+
+	private function SlotConfirmDeleteMailPromptResponse(deleteAll:Boolean) : Void;
 
 	private function SelectMailListIndex(index:Number) : Void;
 

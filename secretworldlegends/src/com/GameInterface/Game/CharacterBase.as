@@ -36,6 +36,7 @@ intrinsic class com.GameInterface.Game.CharacterBase extends Dynel
 	static public var SignalReloadTokens : Signal;
 	static public var SignalClientCharacterOfferedLootBox : Signal;
 	static public var SignalClientCharacterOpenedLootBox : Signal;
+	static public var SignalRemoveTutorialPopup : Signal;
 	public var m_StateList : Object;
 	public var m_BuffList : Object;
 	public var m_InvisibleBuffList : Object;

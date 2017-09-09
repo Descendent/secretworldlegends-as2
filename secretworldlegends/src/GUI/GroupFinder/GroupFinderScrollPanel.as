@@ -22,6 +22,7 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 	static private var TDB_RANDOM_ELITE_DUNGEON : Object;
 	static private var TDB_RANDOM_ELITE_DUNGEON_AEGIS : Object;
 	static private var TDB_DUNGEONS : Object;
+	static private var TDB_NYR : Object;
 	static private var TDB_RAIDS : Object;
 	static private var TDB_SCENARIOS : Object;
 	static private var TDB_PVP : Object;
@@ -38,6 +39,7 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 	static private var SCROLL_PADDING : Number;
 	static private var DUNGEONS : Number;
 	static private var SCENARIOS : Number;
+	static private var RAIDS : Number;
 	static private var PVP : Number;
 	static private var HEADER_ENTRY : Object;
 	static private var DUNGEON_NM_MAIN_IMAGE : Number;
@@ -45,6 +47,7 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 	static private var DUNGEON_ELITE_IMAGE : Number;
 	static private var DUNGEON_ELITE_AEGIS_IMAGE : Number;
 	static private var SCENARIOS_IMAGE : Number;
+	static private var NYR_IMAGE : Number;
 
 	public function GroupFinderScrollPanel();
 
@@ -72,6 +75,8 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 
 	private function GetDuoScenarios();
 
+	private function GetNYRRaids() : Array;
+
 	private function GetPlayfieldsForDifficulty(playfields:Array, difficulty:Number) : Array;
 
 	private function ParsePvPPlayfields(playfields:Array) : Array;
@@ -82,7 +87,7 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 
 	private function SlotEntryToggled(select:Boolean) : Void;
 
-	private function SlotEntryFocused(id:Number, image:Number, isRandom:Boolean) : Void;
+	private function SlotEntryFocused(id:Number, image:Number, isRandom:Boolean, neededRole:Number) : Void;
 
 	public function GetSelectedEntries() : Array;
 

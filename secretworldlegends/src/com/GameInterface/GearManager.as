@@ -26,6 +26,8 @@ intrinsic class com.GameInterface.GearManager
 
 	static public function GetBuildList() : Array;
 
+	static public function BuyBuildSlot() : Void;
+
 	static public function IsPrimaryWeaponHidden() : Boolean;
 
 	static public function IsSecondaryWeaponHidden() : Boolean;

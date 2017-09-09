@@ -32,6 +32,7 @@ intrinsic class GUI.GroupFinder.GroupFinderContent extends WindowComponentConten
 	private var m_SelectedDescription : TextField;
 	private var m_SelectedTitle : TextField;
 	private var m_BonusSymbol : MovieClip;
+	private var m_GoodLoot : MovieClip;
 	private var m_SkipQueueLabel : TextField;
 	private var m_SkipQueueCheckBox : CheckBox;
 	private var m_RoleButtonArray : Array;
@@ -43,6 +44,8 @@ intrinsic class GUI.GroupFinder.GroupFinderContent extends WindowComponentConten
 	private var m_Tooltip : TooltipInterface;
 	private var m_TooltipTimeout : Number;
 	private var m_IsQueuedForPvP : Boolean;
+	private var m_SelectedQueue : Number;
+	private var m_RefreshIntervalId : Number;
 	static private var TDB_AVAILABLE_QUEUES : String;
 	static private var TDB_QUEUE_STATUS : String;
 	static private var TDB_NOT_QUEUED : String;
@@ -59,9 +62,12 @@ intrinsic class GUI.GroupFinder.GroupFinderContent extends WindowComponentConten
 	static private var HEALER_BUTTON_TOOLTIP : String;
 	static private var SIGN_UP : String;
 	static private var LEAVE : String;
-	static private var ROLE_PADDING : Object;
-	static private var SELECT_PANEL_PADDING : Object;
-	static private var SHAMBALA_ID : Object;
+	static private var ROLE_PADDING : Number;
+	static private var SELECT_PANEL_PADDING : Number;
+	static private var REFRESH_INTERVAL : Number;
+	static private var SHAMBALA_ID : Number;
+	static private var NYR_LFG_LOCK : Number;
+	static private var NYR_ELITE_LOCK : Number;
 
 	public function GroupFinderContent();
 
@@ -71,19 +77,27 @@ intrinsic class GUI.GroupFinder.GroupFinderContent extends WindowComponentConten
 
 	private function Layout() : Void;
 
+	private function Refresh() : Void;
+
 	private function UpdateHeaderText() : Void;
 
 	private function UpdateSignUpLeaveButtonText() : Void;
 
 	private function UpdateSignUpLeaveButton() : Void;
 
-	private function UpdateFocusedEntry(id:Number, image:Number, isRandom) : Void;
+	private function UpdateFocusedEntry(id:Number, image:Number, isRandom:Boolean, neededRole:Number) : Void;
+
+	private function UpdateBonusLoot(queueId);
+
+	private function SlotNeededRolesUpdated(neededRoles:Array);
+
+	private function UpdateNeededRole(queueId:Number, neededRole:Number);
 
 	private function LoadImage(container:MovieClip, mediaId:Number);
 
 	private function onLoadInit(target:MovieClip);
 
-	private function SlotEntryFocused(id:Number, image:Number, isRandom) : Void;
+	private function SlotEntryFocused(id:Number, image:Number, isRandom:Boolean, neededRole:Number) : Void;
 
 	private function SlotEntryToggled() : Void;
 
@@ -121,6 +135,10 @@ intrinsic class GUI.GroupFinder.GroupFinderContent extends WindowComponentConten
 
 	public function Close() : Void;
 
+	private function GoodLootRollOverHandler() : Void;
+
+	private function GoodLootRollOutHandler() : Void;
+
 	private function BonusSymbolRollOverHandler() : Void;
 
 	private function BonusSymbolRollOutHandler() : Void;
@@ -132,5 +150,7 @@ intrinsic class GUI.GroupFinder.GroupFinderContent extends WindowComponentConten
 	private function OpenTooltip();
 
 	public function CloseTooltip();
+
+	private function onUnload();
 
 }
