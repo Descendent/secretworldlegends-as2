@@ -8,6 +8,7 @@ import com.GameInterface.ShopInterface;
 import GUI.LootBox.PossibleItem;
 import com.GameInterface.Inventory;
 import com.GameInterface.DistributedValue;
+import com.GameInterface.GUIModuleIF;
 intrinsic class GUI.LootBox.LootBoxContent extends WindowComponentContent
 {
 	private var m_KeyPanel : MovieClip;
@@ -51,5 +52,7 @@ intrinsic class GUI.LootBox.LootBoxContent extends WindowComponentContent
 	private function SlotPanelClosed();
 
 	private function SlotTokenChanged(tokenID:Number, newAmount:Number, oldAmount:Number);
+
+	public function HideModuleChanged(module:GUIModuleIF, isActive:Boolean);
 
 }

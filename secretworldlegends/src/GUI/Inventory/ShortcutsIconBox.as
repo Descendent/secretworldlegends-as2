@@ -20,6 +20,7 @@ intrinsic class GUI.Inventory.ShortcutsIconBox extends ItemIconBox
 	private var m_StartSlot : Number;
 	private var m_Slots : Array;
 	private var m_ClientInventory : Inventory;
+	private var m_ClientQuestInventory : Inventory;
 
 	public function ShortcutsIconBox(boxId:Number, inventoryId:ID32, windowMC:MovieClip, numRows:Number, numColumns:Number, isDefaultBox:Boolean, isNew:Boolean, isShortcutsBox:Boolean);
 
