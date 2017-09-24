@@ -59,6 +59,7 @@ intrinsic class GUI.TradePost.Views.PostalServiceView extends UIComponent
 	private var m_SelectedIndex : Number;
 	private var m_ConfirmDeleteMailPrompt : MovieClip;
 	private var m_ItemIds : Array;
+	private var m_DeleteList : Array;
 	private var m_DefaultButtonWidth : Number;
 	private var m_CheckInterval : Number;
 

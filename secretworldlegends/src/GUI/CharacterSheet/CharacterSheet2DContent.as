@@ -13,11 +13,11 @@ intrinsic class GUI.CharacterSheet.CharacterSheet2DContent extends WindowCompone
 	private var m_SkillsList : MovieClip;
 	private var m_DressingRoomButton : Button;
 	private var m_SprintsPetsButton : Button;
+	private var m_EmotesButton : Button;
 	private var m_AbilitiesButton : Button;
 	private var m_StatsHeader : TextField;
 	private var m_EquipmentHeader : TextField;
 	private var m_WeaponsHeader : TextField;
-	private var m_OtherHeader : TextField;
 	private var m_Character : Character;
 
 	public function CharacterSheet2DContent();
@@ -41,6 +41,8 @@ intrinsic class GUI.CharacterSheet.CharacterSheet2DContent extends WindowCompone
 	private function SlotDressingRoomClicked();
 
 	private function SlotSprintsPetsClicked();
+
+	private function SlotEmotesClicked();
 
 	private function SlotAbilitiesClicked();
 

@@ -43,6 +43,7 @@ intrinsic class com.GameInterface.InventoryItem
 	public var m_TokenCurrencySellPrice1 : Number;
 	public var m_TokenCurrencySellType2 : Number;
 	public var m_TokenCurrencySellPrice2 : Number;
+	public var m_Discount : Number;
 	public var m_BuyLimit : Number;
 	public var m_MaxBuyLimit : Number;
 	public var m_Rank : Number;

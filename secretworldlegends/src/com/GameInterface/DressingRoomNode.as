@@ -12,6 +12,7 @@
 	public var m_Icon : Number;
 	public var m_TokenType : Number;
 	public var m_Price : Number;
+	public var m_Discount : Number;
 	public var m_ItemTemplate : Number;
 
 }

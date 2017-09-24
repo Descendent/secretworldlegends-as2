@@ -5,15 +5,15 @@ import com.GameInterface.Game.Character;
 intrinsic class GUI.Emotes.EmoteListItemRenderer extends ListItemRenderer
 {
 	private var m_Name : TextField;
-	private var m_LockIcon : MovieClip;
-	private var m_LoreNode : LoreNode;
-	private var LOCKED_ALPHA : Object;
-	private var UNLOCKED_ALPHA : Object;
+	private var m_Owned : MovieClip;
+	private var data : LoreNode;
 
 	public function EmoteListItemRenderer();
 
 	private function configUI();
 
 	public function setData(data:Object) : Void;
+
+	private function SlotTagAdded(tagId:Number);
 
 }
