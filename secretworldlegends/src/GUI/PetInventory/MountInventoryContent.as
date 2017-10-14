@@ -13,6 +13,7 @@ import com.GameInterface.FeatData;
 import com.GameInterface.GUIModuleIF;
 import com.GameInterface.ShopInterface;
 import com.GameInterface.Game.Character;
+import com.GameInterface.DressingRoom;
 import com.Utils.Colors;
 import mx.utils.Delegate;
 import com.Utils.Text;
@@ -50,6 +51,8 @@ intrinsic class GUI.PetInventory.MountInventoryContent extends PetInventoryConte
 	private function GetSprintSpeed(level:Number) : Number;
 
 	private function GetNodes() : Void;
+
+	private function NodeCompare(node1:LoreNode, node2:LoreNode);
 
 	public function SelectNodeClip(nodeClip:PetClip) : Void;
 

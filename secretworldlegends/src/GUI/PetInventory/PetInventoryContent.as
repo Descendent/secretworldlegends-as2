@@ -8,7 +8,9 @@ import com.GameInterface.LoreNode;
 import com.GameInterface.LoreBase;
 import com.GameInterface.SpellBase;
 import com.GameInterface.Utils;
+import com.GameInterface.DressingRoom;
 import com.Utils.Colors;
+import com.GameInterface.ShopInterface;
 import GUI.PetInventory.PetClip;
 intrinsic class GUI.PetInventory.PetInventoryContent extends PetInventoryContentBase
 {
@@ -19,6 +21,8 @@ intrinsic class GUI.PetInventory.PetInventoryContent extends PetInventoryContent
 	private function SetLabels() : Void;
 
 	private function GetNodes() : Void;
+
+	private function NodeCompare(node1:LoreNode, node2:LoreNode);
 
 	public function SelectNodeClip(nodeClip:PetClip) : Void;
 

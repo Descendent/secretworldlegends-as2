@@ -49,6 +49,8 @@ intrinsic class com.Components.ItemComponent extends MovieClip
 
 	public function ItemComponent();
 
+	public function GetInventoryItem() : InventoryItem;
+
 	public function PrintStats();
 
 	public function SetData(inventoryItem:InventoryItem, iconLoadDelay:Number);

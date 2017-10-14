@@ -11,6 +11,7 @@ import com.GameInterface.LoreNode;
 import com.GameInterface.LoreBase;
 import com.GameInterface.SpellBase;
 import com.GameInterface.ShopInterface;
+import com.GameInterface.DressingRoom;
 import com.GameInterface.DialogIF;
 import com.GameInterface.Game.Character;
 import mx.utils.Delegate;
@@ -48,6 +49,8 @@ intrinsic class GUI.Emotes.EmotesContent extends WindowComponentContent
 	private function FilterChanged();
 
 	private function Filter(input:Array) : Array;
+
+	private function NodeCompare(node1:LoreNode, node2:LoreNode);
 
 	private function OnItemSelected(event:Object) : Void;
 

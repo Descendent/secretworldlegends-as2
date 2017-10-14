@@ -7,6 +7,7 @@ import com.Utils.Signal;
 import com.Utils.LDBFormat;
 import com.Utils.Text;
 import com.Utils.ID32;
+import com.GameInterface.Utils;
 import com.GameInterface.Game.Character;
 import com.GameInterface.Inventory;
 import com.GameInterface.DressingRoom;
@@ -40,6 +41,8 @@ intrinsic class GUI.DressingRoom.RightPanel extends UIComponent
 	static public var MODE_NO_DATA : Number;
 	static public var MODE_COLORS : Number;
 	static public var MODE_ITEMS : Number;
+	static public var WEAPON_SKINS : Number;
+	static public var BUNDLES : Number;
 
 	public function RightPanel();
 
@@ -51,7 +54,9 @@ intrinsic class GUI.DressingRoom.RightPanel extends UIComponent
 
 	public function ClearStickyPreview();
 
-	public function SetData(node:DressingRoomNode) : Void;
+	public function SetData(node:DressingRoomNode, searchText:String) : Void;
+
+	private function Filter(input:Array, searchText:String);
 
 	private function SetDisplayMode(displayMode:Number);
 

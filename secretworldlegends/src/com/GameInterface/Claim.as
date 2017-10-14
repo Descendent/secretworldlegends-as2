@@ -4,6 +4,7 @@ intrinsic class com.GameInterface.Claim
 	static public var m_Claims : Array;
 	static public var SignalClaimsUpdated : Signal;
 	static public var SignalRewardClaimed : Signal;
+	static public var SignalRewardsUpdated : Signal;
 
 	static public function ClaimAllItems() : Boolean;
 

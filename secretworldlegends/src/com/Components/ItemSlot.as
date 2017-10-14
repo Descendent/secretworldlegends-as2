@@ -33,6 +33,7 @@ intrinsic class com.Components.ItemSlot extends UIComponent
 	private var m_Tooltip : TooltipInterface;
 	private var m_TooltipTimeout : Number;
 	private var m_RightClickMenu : MovieClip;
+	private var m_IsShortCutSlot : Boolean;
 	public var SignalMouseDown : Signal;
 	public var SignalMouseUp : Signal;
 	public var SignalMouseDownEmptySlot : Signal;
@@ -148,5 +149,7 @@ intrinsic class com.Components.ItemSlot extends UIComponent
 	public function GetInventoryID() : ID32;
 
 	public function GetHitPos() : Point;
+
+	public function SetIsShortcutSlot(isShortcutSlot:Boolean) : Void;
 
 }

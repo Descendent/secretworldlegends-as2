@@ -3,6 +3,10 @@ import com.GameInterface.Lore;
 import com.GameInterface.LoreBase;
 import com.GameInterface.LoreNode;
 import com.GameInterface.SpellBase;
+import com.GameInterface.ShopInterface;
+import com.GameInterface.DressingRoom;
+import com.GameInterface.Utils;
+import com.Utils.LDBFormat;
 import com.Utils.Colors;
 intrinsic class GUI.PetInventory.PetClip extends UIComponent
 {
@@ -11,6 +15,7 @@ intrinsic class GUI.PetInventory.PetClip extends UIComponent
 	private var m_UseFrame : MovieClip;
 	private var m_PetNode : LoreNode;
 	private var m_Selected : Boolean;
+	private var m_PromoIcon : MovieClip;
 
 	public function PetClip();
 
@@ -21,6 +26,8 @@ intrinsic class GUI.PetInventory.PetClip extends UIComponent
 	public function GetNode() : LoreNode;
 
 	public function SetData(petNode);
+
+	private function GetPromo();
 
 	public function SetFavorite(favorite:Boolean);
 

@@ -49,6 +49,7 @@ intrinsic class GUI.PetInventory.PetInventoryContentBase extends WindowComponent
 	private var ICONS_BUFFER : Number;
 	private var ICONS_PER_ROW : Number;
 	private var NODES_PER_PAGE : Number;
+	private var PROMO_TWEAKS : Array;
 
 	public function PetInventoryContentBase();
 
@@ -61,6 +62,10 @@ intrinsic class GUI.PetInventory.PetInventoryContentBase extends WindowComponent
 	private function SetLabels() : Void;
 
 	private function GetNodes() : Void;
+
+	private function NodeCompare(node1:LoreNode, node2:LoreNode);
+
+	private function HasPromo(node:LoreNode);
 
 	private function DrawNodeClips() : Void;
 

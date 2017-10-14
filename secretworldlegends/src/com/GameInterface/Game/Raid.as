@@ -16,4 +16,6 @@ intrinsic class com.GameInterface.Game.Raid
 
 	public function GetRaidLeader() : ID32;
 
+	public function IsRaidLeaderTeam(id:ID32) : Boolean;
+
 }

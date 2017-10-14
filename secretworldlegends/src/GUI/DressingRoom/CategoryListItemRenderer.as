@@ -3,6 +3,8 @@ import com.GameInterface.Game.Character;
 import com.GameInterface.DressingRoom;
 import com.GameInterface.DressingRoomNode;
 import com.GameInterface.Inventory;
+import com.GameInterface.Utils;
+import com.Utils.LDBFormat;
 import com.Utils.ID32;
 intrinsic class GUI.DressingRoom.CategoryListItemRenderer extends ListItemRenderer
 {
@@ -12,12 +14,15 @@ intrinsic class GUI.DressingRoom.CategoryListItemRenderer extends ListItemRender
 	private var m_Data : DressingRoomNode;
 	private var m_WardrobeInventory : Inventory;
 	private var m_EquippedInventory : Inventory;
+	private var m_PromoIcon : MovieClip;
 
 	public function CategoryListItemRenderer();
 
 	private function configUI();
 
 	public function setData(data:DressingRoomNode) : Void;
+
+	private function GetPromo() : Number;
 
 	public function Update() : Void;
 

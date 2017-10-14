@@ -29,6 +29,7 @@ intrinsic class GUI.HUD.AbilityBase extends MovieClip
 	private var m_Content : MovieClip;
 	private var m_Moviecliploader : MovieClipLoader;
 	private var m_Resources : Number;
+	private var m_IsUltimate : Boolean;
 	private var m_SpellId : Number;
 	private var m_ResourceIconMonitor : DistributedValue;
 

@@ -9,9 +9,11 @@ import com.Utils.LDBFormat;
 import com.Utils.Archive;
 import mx.utils.Delegate;
 import com.Utils.Signal;
+import com.GameInterface.Lore;
 import com.GameInterface.DressingRoom;
 import com.GameInterface.DressingRoomNode;
 import com.GameInterface.Game.Character;
+import com.GameInterface.Utils;
 intrinsic class GUI.DressingRoom.LeftPanel extends UIComponent
 {
 	private var m_Tab_0 : Button;
@@ -26,6 +28,7 @@ intrinsic class GUI.DressingRoom.LeftPanel extends UIComponent
 	private var m_Tab_9 : Button;
 	private var m_Tab_10 : Button;
 	private var m_Tab_11 : Button;
+	private var m_Tab_12 : Button;
 	private var m_Background : MovieClip;
 	private var m_HeaderText : TextField;
 	private var m_CategoryText : TextField;
@@ -39,6 +42,7 @@ intrinsic class GUI.DressingRoom.LeftPanel extends UIComponent
 	private var m_SearchText : String;
 	private var SignalEquipSlotSelected : Signal;
 	private var SignalCategorySelected : Signal;
+	static private var ULTIMATE_ABILITY_UNLOCK : Number;
 
 	public function LeftPanel();
 
@@ -47,6 +51,10 @@ intrinsic class GUI.DressingRoom.LeftPanel extends UIComponent
 	private function SetLabels() : Void;
 
 	private function SetupTabs() : Void;
+
+	private function UpdateWingsTab() : Void;
+
+	private function SlotTagAdded(tagId:Number) : Void;
 
 	private function TabChanged(tab:Button) : Void;
 
@@ -63,6 +71,8 @@ intrinsic class GUI.DressingRoom.LeftPanel extends UIComponent
 	private function OnFilterTypeChanged() : Void;
 
 	private function OnCategorySelected() : Void;
+
+	private function nodeCompare(node1, node2) : Number;
 
 	private function RemoveFocus() : Void;
 

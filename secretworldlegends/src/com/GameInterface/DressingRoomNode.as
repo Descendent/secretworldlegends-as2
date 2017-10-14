@@ -13,6 +13,7 @@
 	public var m_TokenType : Number;
 	public var m_Price : Number;
 	public var m_Discount : Number;
+	public var m_Promo : Number;
 	public var m_ItemTemplate : Number;
 
 }

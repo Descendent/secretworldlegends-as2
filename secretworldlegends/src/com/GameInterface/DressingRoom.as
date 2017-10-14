@@ -19,4 +19,8 @@ intrinsic class com.GameInterface.DressingRoom
 
 	static public function ClearPreview() : Void;
 
+	static public function GetEventTweakName(eventId:Number) : String;
+
+	static public function IsEventActive(eventId:Number) : Boolean;
+
 }

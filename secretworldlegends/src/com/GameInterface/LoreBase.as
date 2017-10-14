@@ -26,6 +26,8 @@ intrinsic class com.GameInterface.LoreBase
 
 	static public function GetTagTeleportLockout(tagId:Number) : Number;
 
+	static public function GetTagPromo(tagId:Number) : Number;
+
 	static public function IsVisible(tagId:Number) : Boolean;
 
 	static public function IsValidId(tagId:Number) : Boolean;
