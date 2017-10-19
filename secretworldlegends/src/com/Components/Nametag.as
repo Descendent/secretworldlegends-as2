@@ -71,6 +71,7 @@ intrinsic class com.Components.Nametag extends UIComponent
 	private var m_ClientCharacter : Character;
 	private var m_RemoveOnDeselect : Object;
 	private var m_TextColor : Number;
+	private var m_CastBarText : MovieClip;
 	public var SignalRemoveNametag : Signal;
 	static public var SHOW_HEALTHBAR_NONE : Object;
 	static public var SHOW_HEALTHBAR_FRIENDS : Object;
@@ -81,6 +82,12 @@ intrinsic class com.Components.Nametag extends UIComponent
 	static public var SHOW_HOSTILE_NAMETAG_FULL : Object;
 
 	public function Nametag();
+
+	public function SlotSignalCommandStarted(name:String, progressBarType:Number, uninterruptable:Boolean) : Void;
+
+	public function SlotSignalCommandAborted() : Void;
+
+	public function SlotSignalCommandEnded() : Void;
 
 	public function SetDynelID(dynelID:ID32);
 
