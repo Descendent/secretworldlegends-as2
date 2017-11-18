@@ -31,11 +31,9 @@ intrinsic class GUI.GroupSearch.GroupSearchFiltersWindow extends UIComponent
 	private var m_PvPLabel : TextField;
 	private var m_NormalCheckbox : CheckBox;
 	private var m_EliteCheckbox : CheckBox;
-	private var m_NightmareCheckbox : CheckBox;
 	private var m_DifficultiesLabel : TextField;
 	private var m_NormalLabel : TextField;
 	private var m_EliteLabel : TextField;
-	private var m_NightmareLabel : TextField;
 	private var m_ApplyButton : Button;
 	private var m_CancelButton : Button;
 	static public var SOCIAL : Number;

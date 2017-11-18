@@ -1,4 +1,4 @@
-import com.Utils.Signal;
+﻿import com.Utils.Signal;
 intrinsic class com.GameInterface.SkillsBase
 {
 	static public var SignalSkillUpdated : Signal;
@@ -7,5 +7,9 @@ intrinsic class com.GameInterface.SkillsBase
 	static public function GetSkill(skill:Number, weapon:Number) : String;
 
 	static public function UpdateAllSkills() : Void;
+
+	static public function SetCombatTriangle(dPercent, tPercent, hPercent);
+
+	static public function GetCombatTrianglePreview(dPercent, tPercent, hPercent) : Array;
 
 }

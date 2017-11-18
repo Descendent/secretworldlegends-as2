@@ -10,6 +10,7 @@ import com.Components.ItemComponent;
 import com.Utils.Archive;
 import com.Utils.LDBFormat;
 import mx.utils.Delegate;
+import flash.geom.Point;
 import GUI.SkillHiveSimple.DeckSlot;
 import GUI.SkillHiveSimple.DeckManagerAbility;
 intrinsic class GUI.SkillHiveSimple.DeckManager extends WindowComponentContent
@@ -30,9 +31,16 @@ intrinsic class GUI.SkillHiveSimple.DeckManager extends WindowComponentContent
 	private var m_TalismansText : TextField;
 	private var m_WeaponsText : TextField;
 	private var m_SaveAnim : MovieClip;
+	private var m_DamagePercent : TextField;
+	private var m_TankPercent : TextField;
+	private var m_HealingPercent : TextField;
 	private var m_Builds : Array;
 	private var m_SelectedDeck : String;
 	private var m_ValidatorText : String;
+	private var m_Archive : Archive;
+	private var m_TDB_Damage : String;
+	private var m_TDB_Survivability : String;
+	private var m_TDB_Healing : String;
 	static private var ACTIVE_SHORTCUTBAR_COUNT : Number;
 	static private var ACTIVE_SHORTCUTBAR_FIRSTSLOT : Number;
 	static private var PASSIVE_SHORTCUTBAR_COUNT : Number;

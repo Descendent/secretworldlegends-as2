@@ -52,6 +52,7 @@ intrinsic class GUI.SkillHiveSimple.AbilityPageBase extends WindowComponentConte
 	private var m_LanguageMonitor : DistributedValue;
 	private var m_FocusedFeat : FeatData;
 	private var m_TDB_ConfirmUnlockPage : String;
+	private var m_Archive : Archive;
 	static private var BLADE_DATA : Object;
 	static private var HAMMER_DATA : Object;
 	static private var FIST_DATA : Object;

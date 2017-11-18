@@ -41,6 +41,10 @@ intrinsic class GUI.Inspection.InspectionWindow extends WindowComponentContent
 	private var m_WeaponsTitle : TextField;
 	private var m_IconWeapon_1 : MovieClip;
 	private var m_IconWeapon_2 : MovieClip;
+	private var m_TriangleTitle : TextField;
+	private var m_TriangleDamage : TextField;
+	private var m_TriangleTank : TextField;
+	private var m_TriangleHeal : TextField;
 	private var m_ClothesTitle : TextField;
 	private var m_ClothingIconHeadgear1 : MovieClip;
 	private var m_ClothingIconHeadgear2 : MovieClip;

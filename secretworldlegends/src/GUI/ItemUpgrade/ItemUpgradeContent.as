@@ -57,6 +57,8 @@ intrinsic class GUI.ItemUpgrade.ItemUpgradeContent extends WindowComponentConten
 	private var m_ValidFeedback : Number;
 	private var m_BonusFeedback : Number;
 	private var m_FusionFeedback : Number;
+	private var m_GlyphRecoveryCost : Number;
+	private var m_SignetRecoveryCost : Number;
 	private var EMPOWERMENT_TAB : Object;
 	private var FUSION_TAB : Object;
 	private var TARGET_SLOT : Number;
@@ -83,7 +85,11 @@ intrinsic class GUI.ItemUpgrade.ItemUpgradeContent extends WindowComponentConten
 
 	private function InitializeItemSlots();
 
-	public function SlotCraftingResultFeedback(result:Number, numItems:Number, feedback:String, items:Array, percentChance:Number, cost:Number, crit:Boolean, leveled:Boolean, stateArray:Array, validFeedback:Number, bonusFeedback:Number, fusionFeedback:Number);
+	public function InitializeItemSlot(slotID:Number);
+
+	public function SlotCraftingResultFeedback(result:Number, numItems:Number, feedback:String, items:Array, percentChance:Number, cost:Number, crit:Boolean, leveled:Boolean, stateArray:Array, validFeedback:Number, bonusFeedback:Number, fusionFeedback:Number, glyphRecoveryCost:Number, signetRecoveryCost:Number);
+
+	private function UpdateRecoveryButton(button:Button, cost:Number, costMultiplier:Number);
 
 	private function UpdateFeedback();
 
@@ -112,10 +118,6 @@ intrinsic class GUI.ItemUpgrade.ItemUpgradeContent extends WindowComponentConten
 	public function ConfirmEmpowerment() : Boolean;
 
 	private function SlotEmpowerConfirmed(buttonId:Number);
-
-	private function AttachBreakAnim(targetClip:MovieClip);
-
-	private function AttachEmpoweredAnim(targetClip:MovieClip);
 
 	public function SlotStartFusion();
 
@@ -160,10 +162,6 @@ intrinsic class GUI.ItemUpgrade.ItemUpgradeContent extends WindowComponentConten
 	public function SlotDragHandled();
 
 	public function SlotItemDroppedOnDesktop();
-
-	public function SlotDeleteItem();
-
-	public function BuyEmpowerBoosters();
 
 	public function BuyFusionBoosters();
 

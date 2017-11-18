@@ -53,4 +53,6 @@ intrinsic class com.GameInterface.UtilsBase
 
 	static public function SetTradeCash(cash:Number);
 
+	static public function InspectionWindowStatusChanged(open:Boolean) : Void;
+
 }

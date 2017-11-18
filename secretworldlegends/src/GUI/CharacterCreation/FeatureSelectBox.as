@@ -20,11 +20,17 @@ intrinsic dynamic class GUI.CharacterCreation.FeatureSelectBox extends UICompone
 	private var m_CharacterCreationIF : CharacterCreation;
 	private var m_Initialized : Boolean;
 	private var m_FeatureGroup : ButtonGroup;
+	private var m_DisableSurgery : Boolean;
+	private var m_DisableBarber : Boolean;
 	private var NUM_FEATURES : Number;
 
 	public function FeatureSelectBox();
 
 	private function configUI();
+
+	private function DisableSurgery();
+
+	private function DisableBarber();
 
 	private function SelectedFeatureChanged(event:Object);
 

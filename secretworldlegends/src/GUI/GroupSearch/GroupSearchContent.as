@@ -59,6 +59,7 @@ intrinsic class GUI.GroupSearch.GroupSearchContent extends WindowComponentConten
 	static private var SEND_A_MESSAGE : String;
 	static private var VIEW_ENTRY : String;
 	static private var MEET_UP : String;
+	static private var REPORT : String;
 	static private var COLUMN_NAME_ID : Number;
 	static private var COLUMN_ROLE_ID : Number;
 	static private var COLUMN_ACTIVITY_ID : Number;
@@ -172,6 +173,8 @@ intrinsic class GUI.GroupSearch.GroupSearchContent extends WindowComponentConten
 	private function MeetUpEventHandler() : Void;
 
 	private function ViewEntryEventHandler() : Void;
+
+	private function ReportEventHandler() : Void;
 
 	public function SetContentPersistence(persistence:Archive) : Void;
 

@@ -21,6 +21,8 @@ intrinsic class com.GameInterface.LookingForGroup
 
 	public function RequestCharacterCount(mode:Number) : Void;
 
+	public function ReportLFGEntry(m_CharacterID) : Void;
+
 	static public function GetPlayerSignedUpData() : CharacterLFG;
 
 	static public function HasCharacterSignedUp() : Boolean;

@@ -19,10 +19,10 @@ intrinsic class com.GameInterface.CraftingInterface
 
 	static public function DestroyGlyph(inventoryType:Number);
 
-	static public function RecoverGlyph(inventoryType:Number);
+	static public function RecoverGlyph(inventoryType:Number, cost:Number);
 
 	static public function DestroySignet(inventoryType:Number);
 
-	static public function RecoverSignet(inventoryType:Number);
+	static public function RecoverSignet(inventoryType:Number, cost:Number);
 
 }

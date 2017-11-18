@@ -68,6 +68,7 @@ intrinsic class GUI.Shop.ShopWindowContent extends WindowComponentContent
 	private var m_TokenTextFormat : TextFormat;
 	private var m_Character : Character;
 	private var m_IsInitialized : Boolean;
+	private var m_IsClosing : Boolean;
 
 	public function ShopWindowContent();
 
