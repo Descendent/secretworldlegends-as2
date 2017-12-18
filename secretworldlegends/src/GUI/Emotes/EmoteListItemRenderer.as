@@ -5,6 +5,7 @@ import com.GameInterface.LoreBase;
 import com.GameInterface.ShopInterface;
 import com.GameInterface.Game.Character;
 import com.GameInterface.Utils;
+import com.GameInterface.DressingRoom;
 import com.Utils.LDBFormat;
 intrinsic class GUI.Emotes.EmoteListItemRenderer extends ListItemRenderer
 {
@@ -12,7 +13,6 @@ intrinsic class GUI.Emotes.EmoteListItemRenderer extends ListItemRenderer
 	private var m_Owned : MovieClip;
 	private var data : LoreNode;
 	private var m_PromoIcon : MovieClip;
-	private var PROMO_TWEAKS : Array;
 
 	public function EmoteListItemRenderer();
 

@@ -20,6 +20,7 @@ intrinsic dynamic class GUI.LoginCharacterSelection.CharacterSelection extends U
 {
 	static public var e_ModeCharSelect : Object;
 	static public var e_ModeCreateChar : Object;
+	static public var e_ModeRenaming : Object;
 	static private var NAVIGATION_BAR_GAP : Number;
 	private var m_Background : MovieClip;
 	private var m_ScreenTitle : MovieClip;
@@ -42,6 +43,7 @@ intrinsic dynamic class GUI.LoginCharacterSelection.CharacterSelection extends U
 	private var w : Number;
 	private var h : Number;
 	public var SignalCharacterListReceived : Signal;
+	public var SignalRenameRequested : Signal;
 
 	public function CharacterSelection();
 
@@ -73,6 +75,8 @@ intrinsic dynamic class GUI.LoginCharacterSelection.CharacterSelection extends U
 
 	private function BuyCharacterSlot() : Void;
 
+	private function BuyRename() : Void;
+
 	private function CenterConfirmDeleteDialog() : Void;
 
 	private function CloseDeleteCharacterDialog() : Void;
@@ -85,7 +89,7 @@ intrinsic dynamic class GUI.LoginCharacterSelection.CharacterSelection extends U
 
 	private function UpdateSelectedCharacter(index:Number) : Void;
 
-	private function SetMode(mode:Number) : Void;
+	public function SetMode(mode:Number) : Void;
 
 	public function GetMode() : Number;
 

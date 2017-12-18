@@ -41,6 +41,8 @@ intrinsic dynamic class GUI.CharacterCreation.BarberShop extends UIComponent
 
 	private function ColorSelected(colorIndex:Number);
 
+	private function SlotMakeupChanged(index:Number);
+
 	private function PlayMonologSound() : Void;
 
 	private function DeactivateMonologSoundCoolDown() : Void;

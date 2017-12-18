@@ -111,6 +111,22 @@ intrinsic class GUI.ItemUpgrade.ItemUpgradeContent extends WindowComponentConten
 
 	private function UpdateStatsDisplay();
 
+	private function UpdateTargetStatsDisplay(targetItem:InventoryItem);
+
+	private function UpdateTargetGlyphDisplay(targetItem:InventoryItem);
+
+	private function UpdateTargetSignetDisplay(targetItem:InventoryItem);
+
+	private function UpdateResultStatsDisplay(targetItem:InventoryItem, resultItem:InventoryItem);
+
+	private function UpdateResultGlyphDisplay(targetItem:InventoryItem, resultItem:InventoryItem);
+
+	private function UpdateResultSignetDisplay(targetItem:InventoryItem, resultItem:InventoryItem);
+
+	private function UpdateStatComparison(targetItem:InventoryItem, resultItem:InventoryItem);
+
+	private function UpdateProgressBar(bar:MovieClip, xp:Number, type:Number, rarity:Number, rank:Number, isUpgrade:Boolean);
+
 	private function ClearStatsDisplay();
 
 	public function SlotStartEmpowerment();

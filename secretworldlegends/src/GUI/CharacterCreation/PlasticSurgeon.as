@@ -14,8 +14,6 @@ intrinsic dynamic class GUI.CharacterCreation.PlasticSurgeon extends UIComponent
 	public var SignalBack : com.Utils.Signal;
 	public var SignalForward : com.Utils.Signal;
 	private var m_CharacterCreationIF : com.GameInterface.CharacterCreation.CharacterCreation;
-	private var m_WindowTitle : MovieClip;
-	private var m_TopHorizontalDivider : MovieClip;
 	private var m_CharacterSizeSliderLabel : MovieClip;
 	private var m_CharacterSizeSlider : Slider;
 	private var m_CancelButton : MovieClip;

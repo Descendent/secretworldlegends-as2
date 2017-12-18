@@ -33,7 +33,7 @@ intrinsic class com.GameInterface.AccountManagement
 
 	public function GetMaxCharSlots() : Number;
 
-	public function RenameCharacter(charInstance:Number, newName:String) : Void;
+	public function RenameCharacter(charInstance:Number, nickName:String, firstName:String, lastName:String, hasCost:Boolean) : Void;
 
 	public function QuitGame() : Number;
 
