@@ -14,6 +14,7 @@ intrinsic class com.PatcherInterface.Patcher
 	static public var SignalBundleGroupsUpdated : Signal;
 	static public var SignalRDBStatusChanged : Signal;
 	static public var SignalBannerNodeAdded : Signal;
+	static public var SignalPachingRestarted : Signal;
 
 	static public function GetPatchStarted() : Boolean;
 

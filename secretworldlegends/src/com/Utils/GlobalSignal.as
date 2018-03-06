@@ -22,6 +22,7 @@ intrinsic class com.Utils.GlobalSignal
 	static public var SignalSendItemToBank : Signal;
 	static public var SignalSendItemToTradepost : Signal;
 	static public var SignalSendItemToTrade : Signal;
+	static public var SignalSendItemToAgentSystem : Signal;
 	static public var SignalCrosshairTargetUpdated : Signal;
 
 }

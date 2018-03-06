@@ -26,6 +26,7 @@
 	public var m_AttackType : Number;
 	public var m_GMInfo : String;
 	public var m_SellPrice : Number;
+	public var m_SellToken : Number;
 	public var m_PlayerSellPrice : Number;
 	public var m_ItemSentTo : String;
 	public var m_Durability : Number;
