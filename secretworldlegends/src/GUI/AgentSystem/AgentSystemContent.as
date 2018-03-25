@@ -68,6 +68,8 @@ intrinsic class GUI.AgentSystem.AgentSystemContent extends WindowComponentConten
 
 	private function OnModuleActivated(config:Archive) : Void;
 
+	private function InitializeCurrentMissions();
+
 	private function OnModuleDeactivated(config:Archive) : Archive;
 
 	private function SlotTokenAmountChanged(tokenId:Number, newAmount:Number, oldAmount:Number);

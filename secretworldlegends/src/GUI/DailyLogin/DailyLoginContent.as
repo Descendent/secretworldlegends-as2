@@ -7,6 +7,7 @@ intrinsic class GUI.DailyLogin.DailyLoginContent extends WindowComponentContent
 {
 	private var m_NumTracks : Number;
 	private var m_CurrentTrack : Number;
+	private var m_StartTrack : Number;
 	private var m_Skin : MovieClip;
 	private var m_PrevButton : Button;
 	private var m_NextButton : Button;
@@ -28,5 +29,7 @@ intrinsic class GUI.DailyLogin.DailyLoginContent extends WindowComponentContent
 	private function SetTrack(trackNum:Number, forceRefresh:Boolean);
 
 	private function UpdatePagination();
+
+	private function DisplayNews();
 
 }

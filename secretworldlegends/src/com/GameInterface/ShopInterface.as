@@ -8,6 +8,7 @@ intrinsic class com.GameInterface.ShopInterface
 	static public var SignalOpenInstantBuy : Signal;
 	static public var SignalConfirmPurchase : Signal;
 	static public var SignalMembershipPriceUpdated : Signal;
+	static public var SignalSAFCollectorsPriceUpdated : Signal;
 	public var m_Items : Array;
 
 	public function ShopInterface(shopID:ID32);
@@ -51,5 +52,11 @@ intrinsic class com.GameInterface.ShopInterface
 	static public function RequestMembershipPrice();
 
 	static public function PurchaseMembership();
+
+	static public function RequestSAFCollectorsPrice();
+
+	static public function PurchaseSAFCollectors();
+
+	static public function GetPromoFromItemTemplate(templateID:Number) : Boolean;
 
 }

@@ -26,6 +26,7 @@ intrinsic class GUI.AgentSystem.RosterIcon extends ListItemRenderer
 	private var m_PortraitLoader : MovieClipLoader;
 	private var m_PortraitLoading : Boolean;
 	private var m_PortraitPath : String;
+	private var m_PortraitClip : MovieClip;
 
 	private function RosterIcon();
 

@@ -22,6 +22,8 @@ intrinsic class GUI.Shop.InstantBuyEntry extends UIComponent
 	private var SignalClose : Signal;
 	private var m_OverridePrice : Number;
 	private var m_OverrideCurrency : String;
+	private var m_CurrencyIcon : MovieClip;
+	private var m_PromoIcon : MovieClip;
 	static private var NAME_START_Y : Number;
 	static private var ITEM_NAME_HEIGHT : Number;
 

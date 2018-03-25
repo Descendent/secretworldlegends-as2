@@ -10,11 +10,14 @@ import com.Utils.LDBFormat;
 import gfx.controls.Label;
 import com.Components.VideoPlayer;
 import com.GameInterface.DistributedValue;
+import com.GameInterface.NewsBase;
 intrinsic class GUI.MediaPlayer.MediaPlayerContent extends WindowComponentContent
 {
 	private var m_TextView : MovieClip;
 	private var m_ImageView : MovieClip;
 	private var m_VideoPlayer : MovieClip;
+	private var m_EngageImageView : MovieClip;
+	private var m_News : NewsBase;
 	public var SignalContentLoaded : Signal;
 	public var SignalErrorLoading : Signal;
 	private var m_ContentMargin : Number;
@@ -51,5 +54,11 @@ intrinsic class GUI.MediaPlayer.MediaPlayerContent extends WindowComponentConten
 	private function Layout();
 
 	public function GetSize() : Point;
+
+	public function SetEngageImage(url:String);
+
+	public function SlotEngageNodeAdded(index:Number, path:String);
+
+	public function SlotEngageImageDownloaded(index:Number);
 
 }

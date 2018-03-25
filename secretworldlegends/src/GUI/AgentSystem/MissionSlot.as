@@ -43,6 +43,8 @@ intrinsic class GUI.AgentSystem.MissionSlot extends UIComponent
 	private var m_IsLocked : Boolean;
 	private var m_Character : Character;
 	private var m_MissionOverride : AgentSystemMission;
+	private var m_Initialized : Boolean;
+	private var m_AssignedAgentId : Number;
 	static public var STATE_EMPTY : Number;
 	static public var STATE_AVAILABLE : Number;
 	static public var STATE_ACTIVE : Number;

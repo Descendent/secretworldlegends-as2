@@ -6,6 +6,8 @@ import com.GameInterface.GearDataAbility;
 import com.GameInterface.GearDataItem;
 import com.GameInterface.InventoryItem;
 import com.GameInterface.Tooltip.*;
+import com.GameInterface.AgentSystem;
+import com.GameInterface.AgentSystemAgent;
 import com.Components.ItemComponent;
 import com.Utils.Archive;
 import com.Utils.LDBFormat;
@@ -34,6 +36,13 @@ intrinsic class GUI.SkillHiveSimple.DeckManager extends WindowComponentContent
 	private var m_DamagePercent : TextField;
 	private var m_TankPercent : TextField;
 	private var m_HealingPercent : TextField;
+	private var m_AgentHeader : TextField;
+	private var m_Agent0 : TextField;
+	private var m_Agent1 : TextField;
+	private var m_Agent2 : TextField;
+	private var m_AgentTooltip0 : TextField;
+	private var m_AgentTooltip1 : TextField;
+	private var m_AgentTooltip2 : TextField;
 	private var m_Builds : Array;
 	private var m_SelectedDeck : String;
 	private var m_ValidatorText : String;
@@ -41,6 +50,8 @@ intrinsic class GUI.SkillHiveSimple.DeckManager extends WindowComponentContent
 	private var m_TDB_Damage : String;
 	private var m_TDB_Survivability : String;
 	private var m_TDB_Healing : String;
+	private var m_TDB_AgentHeader : String;
+	private var m_Tooltip : TooltipInterface;
 	static private var ACTIVE_SHORTCUTBAR_COUNT : Number;
 	static private var ACTIVE_SHORTCUTBAR_FIRSTSLOT : Number;
 	static private var PASSIVE_SHORTCUTBAR_COUNT : Number;
@@ -49,6 +60,16 @@ intrinsic class GUI.SkillHiveSimple.DeckManager extends WindowComponentContent
 	public function DeckManager();
 
 	private function configUI() : Void;
+
+	private function ShowAgentTooltip0();
+
+	private function ShowAgentTooltip1();
+
+	private function ShowAgentTooltip2();
+
+	private function ShowAgentTooltip(slotIndex:Number);
+
+	private function CloseAgentTooltip();
 
 	private function SetLabels() : Void;
 

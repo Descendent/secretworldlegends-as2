@@ -4,6 +4,7 @@ import com.Utils.LDBFormat;
 import com.GameInterface.AgentSystemMission;
 import com.GameInterface.AgentSystem;
 import com.GameInterface.LoreBase;
+import gfx.controls.Button;
 import GUI.AgentSystem.MissionSlot;
 intrinsic class GUI.AgentSystem.CurrentMissionList extends UIComponent
 {
@@ -11,6 +12,7 @@ intrinsic class GUI.AgentSystem.CurrentMissionList extends UIComponent
 	private var m_Slot_1 : MissionSlot;
 	private var m_Slot_2 : MissionSlot;
 	private var m_Header : TextField;
+	private var m_ViewMissionsButton : Button;
 	public var SignalMissionSelected : Signal;
 	public var SignalEmptyMissionSelected : Signal;
 	static public var MAX_MISSIONS : Number;
