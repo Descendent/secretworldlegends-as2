@@ -2,6 +2,7 @@
 import com.GameInterface.Game.Character;
 import com.GameInterface.ShopInterface;
 import com.GameInterface.DistributedValue;
+import com.GameInterface.AccountManagement;
 import gfx.controls.Button;
 import com.Utils.LDBFormat;
 intrinsic class GUI.Shop.SAFCollectorPurchaseContent extends WindowComponentContent

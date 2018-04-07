@@ -14,6 +14,8 @@ intrinsic class com.GameInterface.AgentSystem
 
 	static public function GetAgents() : Array;
 
+	static public function GetAgentById(agentId:Number) : AgentSystemAgent;
+
 	static public function GetAgentsBySuccessChance(missionId:Number) : Array;
 
 	static public function GetSuccessChanceForAgent(agentId:Number, missionId:Number) : Number;

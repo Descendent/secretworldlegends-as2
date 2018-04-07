@@ -32,6 +32,8 @@ intrinsic class GUI.AgentSystem.MissionSlot extends UIComponent
 	private var m_RefreshBG : MovieClip;
 	private var m_ExpediteButton : MovieClip;
 	private var m_Patron : MovieClip;
+	private var m_Duration : TextField;
+	private var m_DurationIcon : MovieClip;
 	private var m_TotalTime : Number;
 	private var m_TimeInterval : Number;
 	private var m_Reward : MovieClip;
@@ -98,7 +100,7 @@ intrinsic class GUI.AgentSystem.MissionSlot extends UIComponent
 
 	private function ClearTimeInterval();
 
-	private function CalculateTimeString(totalSeconds) : String;
+	private function CalculateTimeString(totalSeconds:Number, calcDiff:Boolean) : String;
 
 	private function onUnload() : Void;
 

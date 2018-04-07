@@ -8,6 +8,7 @@ import com.GameInterface.Inventory;
 import com.GameInterface.InventoryItem;
 import com.GameInterface.ShopInterface;
 import com.GameInterface.Game.Character;
+import com.GameInterface.LoreBase;
 import com.Utils.Signal;
 import com.Utils.LDBFormat;
 import com.Utils.Text;
@@ -64,6 +65,7 @@ intrinsic class GUI.AgentSystem.MissionDetail extends UIComponent
 	static private var COMMON : Number;
 	static private var RARE : Number;
 	static private var EPIC : Number;
+	static private var UNLOCK_SLOT_2 : Number;
 
 	public function MissionDetail();
 
