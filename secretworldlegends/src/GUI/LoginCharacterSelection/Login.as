@@ -19,6 +19,7 @@ intrinsic dynamic class GUI.LoginCharacterSelection.Login extends UIComponent
 	public var visibleRect : flash.geom.Rectangle;
 	private var m_Background : MovieClip;
 	private var m_BackgroundTitle : MovieClip;
+	private var m_BackgroundBadge : MovieClip;
 	private var m_NavigationBar : MovieClip;
 	private var m_QuitButton : MovieClip;
 	private var m_SettingsButton : MovieClip;
