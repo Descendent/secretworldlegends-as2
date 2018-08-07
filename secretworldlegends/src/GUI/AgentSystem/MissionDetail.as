@@ -66,6 +66,8 @@ intrinsic class GUI.AgentSystem.MissionDetail extends UIComponent
 	static private var RARE : Number;
 	static private var EPIC : Number;
 	static private var UNLOCK_SLOT_2 : Number;
+	static private var UNLOCK_SLOT_3 : Number;
+	static private var UNLOCK_SLOT_4 : Number;
 
 	public function MissionDetail();
 
