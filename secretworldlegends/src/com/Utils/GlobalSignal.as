@@ -15,6 +15,7 @@ intrinsic class com.Utils.GlobalSignal
 	static public var SignalScryTimerLoaded : Signal;
 	static public var SignalScryCounterLoaded : Signal;
 	static public var SignalScryTimerCounterComboLoaded : Signal;
+	static public var SignalScryProgressLoaded : Signal;
 	static public var SignalInterfaceOptionsReset : Signal;
 	static public var SignalShowPassivesBar : Signal;
 	static public var SignalSendItemToUpgrade : Signal;

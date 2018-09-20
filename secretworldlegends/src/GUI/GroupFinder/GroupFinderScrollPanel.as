@@ -31,6 +31,8 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 	static private var TDB_ELITE_HEADER : Object;
 	static private var TDB_SOLO : Object;
 	static private var TDB_DUO : Object;
+	static private var TDB_SEEK_AND_PRESERVE : Object;
+	static private var TDB_OCCULT_DEFENCE : Object;
 	static private var TDB_NIGHTMARE : Object;
 	static private var TDB_ERROR_RANDOM_SELECTED : Object;
 	static private var TDB_ERROR_IN_RAID : Object;
@@ -74,6 +76,10 @@ intrinsic class GUI.GroupFinder.GroupFinderScrollPanel extends UIComponent
 	private function GetSoloScenarios();
 
 	private function GetDuoScenarios();
+
+	private function GetOccultDefenceSoloScenarios();
+
+	private function GetOccultDefenceDuoScenarios();
 
 	private function GetNYRRaids() : Array;
 
